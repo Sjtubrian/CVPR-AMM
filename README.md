@@ -1,2 +1,5 @@
-# Adversarial_Membership_Manipulation
-Official code repository for our CVPR 2026 paper on A Unified Perspective on Adversarial Membership Manipulation in Vision Models
+This is the official GitHub repository for our paper:
+
+**A Unified Perspective on Adversarial Membership Manipulation in Vision Models**
+
+🚧 The code is currently being prepared and will be released soon.
