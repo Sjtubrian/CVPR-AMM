@@ -1,4 +1,4 @@
-# Adversarial Membership Manipulation: Minimal Reproduction
+# Adversarial Membership Manipulation
 
 This repository provides a **minimal and simplified reproduction** of the core ideas in our paper:
 
