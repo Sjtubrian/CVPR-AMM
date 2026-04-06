@@ -42,7 +42,7 @@ These examples illustrate the core intuition of MFA: very small perturbations ca
 ## 1. Train target and shadow models
 
 **Script**
-- `train/train_shadow_models_cifar10.py`
+- `train/train_shadow_models.py`
 
 This script trains:
 - one **target model**
@@ -63,7 +63,7 @@ These models provide the basic setup for membership inference and follow the sta
 ## 2. Fabricate members
 
 **Script**
-- `fabricate/generate_fabricated_members_cifar10.py`
+- `fabricate/generate_fabricated_members.py`
 
 This script generates fabricated members under several attack variants, including FGSM, BIM, PGD, CW, adaptive PGD, and the stabilized adaptive PGD variant used in the experiments.
 
@@ -79,7 +79,7 @@ Typical outputs:
 ## 3. Extract gradient norms
 
 **Script**
-- `gradient/extract_gradient_norm_cifar10.py`
+- `gradient/extract_gradient_norm.py`
 
 This script extracts the **gradient norm**
 
@@ -102,7 +102,7 @@ If you want to extend the pipeline, this is the first component to adapt to new 
 ### 4.1 Export confidence statistics
 
 **Script**
-- `evaluation/export_shadow_confidences_cifar10.py`
+- `evaluation/export_shadow_confidences.py`
 
 This script exports confidence-based quantities from shadow models and the target model. These values are useful for building the broader MIA pipeline and for reproducing the supporting evaluation logic in the paper.
 
