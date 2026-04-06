@@ -71,9 +71,3 @@ print(len(indices_less_than_percentile))
 np.save(os.path.join(index_save_path, "test_1_index.npy"), indices_less_than_percentile)
 print("Saved indices for test_1_index")
 
-
-# Manual reference values kept from the original script.
-# cifar10  = 3.135155202471651e-05
-# cifar100 = 0.0008920741791371259
-# cinic    = 0.00018900038849096746
-# svhn     = 0.0007079240574967117
