@@ -145,3 +145,11 @@ We hope follow-up researchers can use this code as a starting point and extend t
 ## Citation
 
 If you find this repository helpful, please cite the paper.
+
+```bibtex
+@inproceedings{gao2026unified,
+  title={A Unified Perspective on Adversarial Membership Manipulation in Vision Models},
+  author={Gao, Ruize and Zhou, Kaiwen and Chen, Yongqiang and Liu, Feng},
+  booktitle={CVPR},
+  year={2026}
+}
