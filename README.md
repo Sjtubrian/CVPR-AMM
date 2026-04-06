@@ -7,7 +7,7 @@ This repository provides a **minimal and simplified reproduction** of the core i
 The paper is the **first to present a unified framework** for adversarial membership manipulation in vision models, including:
 
 - **Member Fabrication Attack (MFA)**: fabricating membership through imperceptible input perturbations.
-- **Member Fabrication Detection (MFD)**: distinguishing fabricated members from true members using **input gradient norm**.
+- **Member Fabrication Detection (MFD)**: distinguishing fabricated members from true members using **gradient norm**.
 - **Adversarially Robust MIAs (AR-MIAs)**: improving inference robustness by incorporating gradient-geometry signals into existing MIAs.
 
 The methodology and design are already presented clearly in the paper. This codebase therefore provides a **simple working example** that reproduces the main pipeline in a lightweight way, so that follow-up researchers can easily understand the idea and extend it to their own settings.
@@ -35,7 +35,7 @@ These examples illustrate the core intuition of MFA: very small perturbations ca
 ├── assets/       # Figures used in this README
 ├── train/        # Train target and shadow models
 ├── fabricate/    # Generate fabricated members
-├── gradient/     # Extract input gradient norms
+├── gradient/     # Extract gradient norms
 └── evaluation/   # Export confidence statistics and evaluate detection
 ```
 
@@ -81,7 +81,7 @@ Typical outputs:
 **Script**
 - `gradient/extract_gradient_norm_cifar10.py`
 
-This script extracts the **input gradient norm**
+This script extracts the **gradient norm**
 
 ```text
 ||∇_x ℓ(f(x), y)||
@@ -111,7 +111,7 @@ This script exports confidence-based quantities from shadow models and the targe
 **Script**
 - `evaluation/plot_detection_roc_curves_gradient_norm.py`
 
-This script plots ROC curves for distinguishing **true members** from **fabricated members** using the extracted **input gradient norms**.
+This script plots ROC curves for distinguishing **true members** from **fabricated members** using the extracted **gradient norms**.
 
 ### 4.3 Plot TNR–TPR attack comparison curves
 
@@ -132,7 +132,7 @@ This script keeps a compact loss-based ROC comparison example from the original 
 ```text
 1. Train target and shadow models
 2. Generate fabricated members
-3. Extract input gradient norms
+3. Extract gradient norms
 4. Evaluate with ROC curves
 ```
 
